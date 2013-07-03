@@ -1,0 +1,18 @@
+Next Todos:
+- renaming of library?
+- comparison to supported locales (otherwise default)
+- better templating (integration in view engine, keys?, {}, {0} args?
+- tutorial
+- licencing
+- tests?
+- package json
+- npm publishing
+- npm coding styles
+
+Future Todos:
+- that would be sexy:
+  <h3>__('messages.hello.name.surname', [{{name}}, {{surname}},{{locale}}])</h3>
+
+Maybes:
+- male/femal rendering?
+- plural singular rendering (or should the user do this by himself in controller?)

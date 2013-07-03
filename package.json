@@ -1,0 +1,51 @@
+{
+    "name": "i18nnn",
+    "version": "0.0.1",
+    "description": "Internationalisation module for nodejs based on managable xlsx and csv files.",
+    "homepage": "https://github.com/ndrizza/i18nnn/",
+    "bugs": "https://github.com/ndrizza/i18nnn/issues",
+    "author": {
+        "name": "ndrizza",
+        "email": ""
+    },
+    "contributors": [
+        {
+            "name": "ndrizza",
+            "email": ""
+        }
+    ],
+    "engines": {
+        "node": ">=0.6"
+    },
+    "keywords": [
+        "node",
+        "i18n",
+        "i18nnn",
+        "internationalisation",
+        "locale"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/ndrizza/i18nnn.git"
+    },
+    "devDependencies": {
+        "csv": "0.3.3",
+        "xlsx": "0.2.7-d",
+        "sprintf": "0.1.1"
+    },
+    "dependencies": {
+        "csv": "0.3.3",
+        "xlsx": "0.2.7-d",
+        "sprintf": "0.1.1"
+    },
+    "optionalDependencies": {},
+    "scripts": {
+        "test": "make test"
+    },
+    "readme": "",
+    "_id": "i18nnn@0.0.1",
+    "dist": {
+        "shasum": "ef102e36f79a40235c27dd5375fde40edc3b4d23"
+    },
+    "_from": "i18nnn"
+}
