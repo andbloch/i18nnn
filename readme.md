@@ -1,4 +1,4 @@
-## Status: Early Development Status
+## Status: Early Development Stage
 
 This library is still in its early stages. Feel free to contribute!
 
