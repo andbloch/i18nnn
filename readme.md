@@ -9,8 +9,8 @@
 ## Locales Management
 
 The messages can easily be managed in an <code>.xlsx</code> or <code>.csv</code> spreadsheet as
-shown below. The messages are managed in keys and the supported languages are set up as columns.
-The first language columns acts as default language.
+shown below. The messages are managed in keys and the supported languages are defined in columns.
+The first language column acts as default language.
 
 ![xlsx localisation](https://raw.github.com/ndrizza/i18nnn/master/i18n.png)
 
