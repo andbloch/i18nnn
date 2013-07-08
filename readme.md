@@ -46,15 +46,18 @@ used, or custom options can be specified.
 
     i18nnn.init(); // intilialise with default options
 
-Here's an example whith a custom configuration, equivalent to the initialisation with the default
-options above:
+Here's an example with a custom configuration, equivalent to the initialisation with the default
+options shown before:
 
     i18nnn.init({ // initialise with custom uptions
+        
         messagesFilePath: process.cwd()+'/locales/messages.xlsx',
+        
         csv: { // if you're using csv intead of xlsx
             delimiter: ';',
             escape: '"'
         },
+        
         // default cookie key for locale
         // the locale middleware (express) will use this field to store the determined the locale
         cookieLocaleKey: 'locale'
@@ -80,12 +83,3 @@ This will enrich the <code>req</code> object with the following properties:
 
 Use <code>req.language</code> to render your messages, if the language is not specified in your
 spreadsheet it will switch back to the default language.
-
-## Full Example
-
-TODO: examples folder.
-
-
-## Troubleshooting
-
-No known issues for the moment.
