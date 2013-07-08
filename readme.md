@@ -39,15 +39,15 @@ i18nnn can be configured in your <code>app.js</code> or <code>server.js</code> f
 
     var i18nnn = require('i18nnn');
 
-Further i18nnn needs to be initialised with the messages. Thereby the default options can be
+Additionally, i18nnn needs to be initialised with the messages. Thereby the default options can be
 used, or custom options can be specified.
 
     i18nnn.init(); // intilialise with default options
 
-Here's an example with a custom configuration, equivalent to the initialisation with the default
+Here's an example of custom configuration, equivalent to the initialisation with the default
 options shown before:
 
-    i18nnn.init({ // initialise with custom uptions
+    var options = {
         
         messagesFilePath: process.cwd()+'/locales/messages.xlsx',
         
@@ -59,14 +59,15 @@ options shown before:
         // default cookie key for locale
         // the locale middleware (express) will use this field to store the determined the locale
         cookieLocaleKey: 'locale'
-    });
+    };
+
+    // initialise with custom uptions
+    i18nnn.init(options);
 
 
 ## Locale Middleware for Express
 
-i18nnn also comes with a locale middleware which can be used in expressJS to attach the locale to
-the request (<code>req</code>) object. But you are left free if you want to use this locale
-middleware or another one.
+i18nnn also comes with a locale middleware which can be used in expressJS to attach the locale to ExpressJS' <code>req</code> object. Anyways, you are left free to use this locale middleware or another one.
 
     // ensure you enable expressJS' cookie parser before enabling the locale middleware
     app.use(express.cookieParser());
@@ -80,4 +81,4 @@ This will enrich the <code>req</code> object with the following properties:
     req.region // de
 
 Use <code>req.language</code> to render your messages, if the language is not specified in your
-spreadsheet it will switch back to the default language.
+spreadsheet it will return the message in the language of the first language column of your spreadsheet.
