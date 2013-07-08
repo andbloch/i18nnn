@@ -68,7 +68,7 @@ i18nnn also comes with a locale middleware which can be used in expressJS to att
 the request (<code>req</code>) object. But you are left free if you want to use this locale
 middleware or another one.
 
-    // ensure you enable expressJS' cookie parser before if you need him!
+    // ensure you enable expressJS' cookie parser before enabling the locale middleware
     app.use(express.cookieParser());
     app.use(i18nnn.locale); // enables i18nnn locale middleware
 
