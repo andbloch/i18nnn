@@ -8,9 +8,7 @@ This library is still in its early stages. Feel free to contribute! Have a look 
     npm install i18nnn
 
 
-## Application
-
-Message management:
+## Locales Management
 
 The messages can easily be managed in an <code>.xlsx</code> or <code>.csv</code> spreadsheet as
 shown below. The messages are managed in keys and the supported languages are set up as columns.
