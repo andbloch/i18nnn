@@ -57,8 +57,9 @@ options above:
             delimiter: ';',
             escape: '"'
         },
-        cookieLocaleKey: 'locale' // default cookie key for locale, the locale middleware will use
-        this to determine the locale
+        // default cookie key for locale
+        // the locale middleware (express) will use this field to store the determined the locale
+        cookieLocaleKey: 'locale'
     });
 
 
@@ -84,9 +85,9 @@ spreadsheet it will switch back to the default language.
 
 ## Full Example
 
-TODO
+TODO: examples folder.
 
 
 ## Troubleshooting
 
-### No known issues for the moment.
+No known issues for the moment.
