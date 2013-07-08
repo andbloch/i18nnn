@@ -1,6 +1,4 @@
-## Library Status
-
-This library is still in its early stages. Feel free to contribute! Have a look at the todos.txt.
+*This library is still in its early stages. Feel free to contribute! Have a look at the todos.txt.*
 
 
 ## Installation
