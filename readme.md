@@ -19,14 +19,15 @@ The messages for the appropriate language can then be used as follows:
     app.get('/', function(req, res) {
     
         var model = {
+        
             // get message in default language
-            other: i18nnn.__("messages.hello"),
+            hello: i18nnn.__("messages.hello"),
     
             // get localized message
-            title: i18nnn.__("messages.title", req.locale),
+            welcome: i18nnn.__("main.welcome", req.locale),
     
             // get localized and parametrized message
-            message: i18nnn.__("messages.hello.name.surname", ['John', 'Doe'], req.locale)
+            helloWithName: i18nnn.__("messages.hello.name.surname", ['John', 'Doe'], req.locale)
         };
     
         res.render('index', model)
