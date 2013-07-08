@@ -19,7 +19,6 @@ The messages for the appropriate language can then be used as follows:
     app.get('/', function(req, res) {
     
         var model = {
-        
             // get message in default language
             hello: i18nnn.__("messages.hello"),
     
