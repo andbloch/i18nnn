@@ -47,15 +47,13 @@ used, or custom options can be specified.
 Here's an example of custom configuration, equivalent to the initialisation with the default
 options shown before:
 
-    var options = {
-        
+    var options = { // equivalent to default options
+        // path to messages speradsheet
         messagesFilePath: process.cwd()+'/locales/messages.xlsx',
-        
-        csv: { // if you're using csv intead of xlsx
+        csv: { // csv settings (if you're using csv intead of xlsx)
             delimiter: ';',
             escape: '"'
         },
-        
         // default cookie key for locale
         // the locale middleware (express) will use this field to store the determined the locale
         cookieLocaleKey: 'locale'
