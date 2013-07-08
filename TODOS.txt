@@ -14,5 +14,5 @@ Future Todos:
   <h3>__('messages.hello.name.surname', [{{name}}, {{surname}},{{locale}}])</h3>
 
 Maybes:
-- male/femal rendering?
-- plural singular rendering (or should the user do this by himself in controller?)
+- male/female rendering? plural singular rendering? (or should the user do this himself?)
+- translation API integration (JSON)
